@@ -50,21 +50,21 @@ const server_contacts = [
     },
 ]
 
-function ContactContextProvider({children}) {
+function ContactContextProvider({ children }) {
     const [contacts, setContacts] = useState(server_contacts)
-    const { contact_id } = useParams()
-    
+    const { id } = useParams()
     let contact_selected = null
-    if (contact_id) {
-        contact_selected = contacts.find(contact => contact.id === Number(contact_id))
+
+    if (id) {
+        contact_selected = contacts.find(contact => contact.id === Number(id))
     }
 
-    function deleteMessageById(message_id) {
+    function deleteMessageById(contactId, messageId) {
         const contacts_modified = contacts.map((contact) => {
-            if (contact.id === Number(contact_id)) {
+            if (contact.id === Number(contactId)) {
                 return {
                     ...contact,
-                    messages: contact.messages.filter(msg => msg.id !== Number(message_id))
+                    messages: contact.messages.filter(msg => msg.id !== Number(messageId))
                 }
             }
             return contact
@@ -72,9 +72,9 @@ function ContactContextProvider({children}) {
         setContacts(contacts_modified)
     }
 
-    function createMessage(value, sendByMe) {
+    function createMessage(contactId, value, sendByMe) {
         const contacts_modified = contacts.map((contact) => {
-            if (contact.id === Number(contact_id)) {
+            if (contact.id === Number(contactId)) {
                 const new_message = {
                     id: contact.messages.length + 1,
                     sendByMe: sendByMe,
@@ -91,9 +91,9 @@ function ContactContextProvider({children}) {
         setContacts(contacts_modified)
     }
 
-    function deleteAllMessages() {
+    function deleteAllMessages(contactId) {
         const contacts_modified = contacts.map((contact) => {
-            if (contact.id === Number(contact_id)) {
+            if (contact.id === Number(contactId)) {
                 return {
                     ...contact,
                     lastMessage: "",
