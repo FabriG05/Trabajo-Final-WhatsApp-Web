@@ -6,7 +6,6 @@ import WhatsappSidebar from './Components/WhatsAppSidebar/WhatsAppSidenar'
 import HomeScreen from './Screens/HomeScreen/HomeScreen'
 
 
-
 function App() {
   return (
     <ThemeContextProvider>
