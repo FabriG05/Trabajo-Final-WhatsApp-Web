@@ -1,0 +1,7 @@
+.WhatsappSidebar {
+    height: 100vh;
+    width: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    
+}

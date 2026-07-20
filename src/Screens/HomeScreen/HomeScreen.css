@@ -1,0 +1,9 @@
+.home-screen {
+    display: flex;
+    height: 100vh;
+    width: auto;
+}
+
+.home-main {
+    flex: 1;
+}

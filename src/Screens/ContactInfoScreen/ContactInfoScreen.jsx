@@ -1,7 +1,7 @@
 import { useParams } from "react-router"
 import { useContext } from "react"
 import { ContactContext } from "../../Context/ContactContext"
-import WhatsappSidebar from "../../Components/WhatsAppSidebar/WhatsAppSidenar"
+import WhatsappSidebar from "../../Components/WhatsAppSidebar/WhatsAppSidebar"
 import ContactChatHeader from "../../Components/Contact/ContactChat/ContactChatHeader/ContactChatHeader"
 import Messages from "../../Components/Messages/MEssages"
 import ContactInfoHeader from "../../Components/Contact/ContactInfo/ContactInfoHeader/ContactInfoHeader"

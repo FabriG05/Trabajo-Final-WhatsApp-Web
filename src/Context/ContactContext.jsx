@@ -11,9 +11,9 @@ const ContactContext = createContext()
 const server_contacts = [
     {
         id: 1,
-        name: "Anita",
+        name: "Anita 🌻",
         profilePicture: Ani,
-        lastMessage: "Of course",
+        lastMessage: "Of course", sendByMe: false,
         messages: [
             { id: 1, sendByMe: false, content: "Hola!" },
             { id: 2, sendByMe: true, content: "Cómo estás?" },
@@ -23,9 +23,9 @@ const server_contacts = [
     },
     {
         id: 2,
-        name: "María Gómez",
+        name: "María Gómez 🦁",
         profilePicture: Vir,
-        lastMessage: "Sisis. Te manda saludos Cruella",
+        lastMessage: "Sisis. Te manda saludos Cruella", sendByMe: false,
         messages: [
             { id: 1, sendByMe: true, content: "Eu, cómo andás?" },
             { id: 2, sendByMe: false, content: "Todo piola compañere" },
@@ -35,21 +35,21 @@ const server_contacts = [
     },
     {
         id: 3,
-        name: "Nico",
+        name: "Niko",
         profilePicture: Nico,
-        lastMessage: "Dale, nos vemos hoy a la noche",
+        lastMessage: "Dale, nos vemos hoy a la noche", sendByMe: true,
         messages: [
             { id: 1, sendByMe: false, content: "Te pinta que nos veamos a la noche y comamos algo tranqui?" },
             { id: 2, sendByMe: true, content: "Dale, bldo" },
-            { id: 3, sendByMe: false, content: "Te paso a buscar tipo 8:30 /9" },
+            { id: 3, sendByMe: false, content: "Te paso a buscar tipo 8:30 / 9" },
             { id: 4, sendByMe: true, content: "Te espero." }
         ]
     },
     {
         id: 4,
-        name: "Isa",
+        name: "Isa ⚡",
         profilePicture: Isa,
-        lastMessage: "Sisis",
+        lastMessage: "Sisis", sendByMe: false,
         messages: [
             { id: 1, sendByMe: true, content: "Eu blda, te gustó lo de Billie de la otra vuelta?" },
             { id: 2, sendByMe: true, content: "Couldn't stop crying tbh..." },
