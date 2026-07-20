@@ -3,6 +3,7 @@ import { ContactContext } from "../../Context/ContactContext"
 import WhatsappSidebar from "../../Components/WhatsAppSidebar/WhatsAppSidenar"
 import { useParams, Link } from "react-router"
 import Messages from "../../Components/Messages/MEssages"
+import ContactChatHeader from "../../Components/Contact/ContactChat/ContactChatHeader/ContactChatHeader"
 
 
 const ContactChatScreen = () => {
@@ -21,7 +22,7 @@ const ContactChatScreen = () => {
     return (
         <div>
             <WhatsappSidebar />
-            <h2>{currentContact.name}</h2>
+            <ContactChatHeader currentContact={currentContact} />
             <Messages />
         </div>
     )

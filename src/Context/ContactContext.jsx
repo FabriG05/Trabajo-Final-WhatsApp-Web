@@ -1,5 +1,10 @@
 import { createContext, useState } from "react";
 import { Outlet, useParams } from "react-router";
+import Ani from "../Assets/Images/ProfilePics/Ani.webp";
+import Vir from "../Assets/Images/ProfilePics/Vir.webp";
+import Nico from "../Assets/Images/ProfilePics/Nico.webp";
+import Isa from "../Assets/Images/ProfilePics/Isa.webp";
+
 //Por ahora, para que se renderize, lo dejamos así. Cambiar el return y poner outlet.
 
 const ContactContext = createContext()
@@ -7,6 +12,7 @@ const server_contacts = [
     {
         id: 1,
         name: "Anita",
+        profilePicture: Ani,
         lastMessage: "Of course",
         messages: [
             { id: 1, sendByMe: false, content: "Hola!" },
@@ -18,6 +24,7 @@ const server_contacts = [
     {
         id: 2,
         name: "María Gómez",
+        profilePicture: Vir,
         lastMessage: "Sisis. Te manda saludos Cruella",
         messages: [
             { id: 1, sendByMe: true, content: "Eu, cómo andás?" },
@@ -29,6 +36,7 @@ const server_contacts = [
     {
         id: 3,
         name: "Nico",
+        profilePicture: Nico,
         lastMessage: "Dale, nos vemos hoy a la noche",
         messages: [
             { id: 1, sendByMe: false, content: "Te pinta que nos veamos a la noche y comamos algo tranqui?" },
@@ -40,6 +48,7 @@ const server_contacts = [
     {
         id: 4,
         name: "Isa",
+        profilePicture: Isa,
         lastMessage: "Sisis",
         messages: [
             { id: 1, sendByMe: true, content: "Eu blda, te gustó lo de Billie de la otra vuelta?" },
