@@ -1,6 +1,8 @@
-.whatsapp-sidebar {
-    width: 100%;
-    overflow-y: auto;
+.WhatsappSidebar {
+    display: flex;
+    height: 100vh;
+    width: 380px;
+    flex-shrink: 0;
 }
 
 .chats-container {

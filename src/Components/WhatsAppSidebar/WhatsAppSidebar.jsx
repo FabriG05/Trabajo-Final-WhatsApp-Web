@@ -7,7 +7,7 @@ function WhatsappSidebar() {
     return (
         <aside className="WhatsappSidebar">
             <SidebarAsideNav />
-            <div>
+            <div className="sidebar-content">
                 <SidebarHeader />
                 <SidebarContacts />
             </div>

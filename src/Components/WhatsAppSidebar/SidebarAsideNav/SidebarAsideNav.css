@@ -1,5 +1,5 @@
 .sidebar-aside__nav {
-    height: 100vh;
+    height: 100%;
     width: 60px;
     background-color: var(--secondary-color, #202c33);
     display: flex;
