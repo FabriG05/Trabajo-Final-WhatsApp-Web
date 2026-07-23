@@ -3,8 +3,8 @@
 :root {
     --primary-color: #161717;
     --secondary-color: #1d1f1f;
-    --chat-background-color: #161717;
     --message-color: #144d37;
+    --received-message-color: #242626;
     --coloured-button-bg-color: #103529;
     --regular-button-bg-color: #343535;
 }

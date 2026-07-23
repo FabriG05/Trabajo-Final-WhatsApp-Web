@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { ContactContext } from "../../Context/ContactContext"
 import WhatsappSidebar from "../../Components/WhatsAppSidebar/WhatsAppSidebar"
 import ContactChatHeader from "../../Components/Contact/ContactChat/ContactChatHeader/ContactChatHeader"
-import Messages from "../../Components/Messages/MEssages"
+import ContactChatScreen from "../ContactChatScreen/ContactChatScreen"
 import ContactInfoHeader from "../../Components/Contact/ContactInfo/ContactInfoHeader/ContactInfoHeader"
 import ContactInfoMain from "../../Components/Contact/ContactInfo/ContactInfoMain/ContactInfoMain"
 import ContactInfoFooter from "../../Components/Contact/ContactInfo/ContactInfoFooter/ContactInfoFooter"
@@ -18,8 +18,7 @@ function ContactInfoScreen() {
             <WhatsappSidebar />
             <main>
                 <section>
-                    <ContactChatHeader currentContact={currentContact} />
-                    <Messages />
+                    <ContactChatScreen />
                 </section>
                 <aside>
                     <ContactInfoHeader currentContact={currentContact} />

@@ -21,6 +21,11 @@
     color: #fff;
 }
 
+.sidebar-header__top-icons {
+    display: flex;
+    gap: 8px
+}
+
 .sidebar-header__search-bar {
     display: flex;
     justify-content: center;

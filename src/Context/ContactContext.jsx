@@ -18,7 +18,8 @@ const server_contacts = [
             { id: 1, sendByMe: false, content: "Hola!" },
             { id: 2, sendByMe: true, content: "Cómo estás?" },
             { id: 3, sendByMe: false, content: "Bien. Wbu?" },
-            { id: 4, sendByMe: true, content: "Todo bien. U ready for Spiderman?" }
+            { id: 4, sendByMe: true, content: "Todo bien. U ready for Spiderman?" },
+            { id: 5, sendByMe: false, content: "Of course"}
         ]
     },
     {

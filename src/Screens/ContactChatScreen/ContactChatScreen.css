@@ -1,0 +1,17 @@
+.contact-chat-screen {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--chat-background-color);
+    position: relative;
+    overflow: hidden;
+}

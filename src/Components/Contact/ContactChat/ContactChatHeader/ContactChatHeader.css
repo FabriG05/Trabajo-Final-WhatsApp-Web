@@ -1,0 +1,85 @@
+.contact-chat-header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    height: 60px;
+    border-bottom: 1px solid #2d2e2e;
+    user-select: none;
+    z-index: 10;
+}
+
+.contact-chat-header__info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-chat-header__avatar {
+    display: flex;
+    align-items: center;
+}
+
+.contact-chat-header__avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.contact-chat-header__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-chat-header__name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #e9edef;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.contact-chat-header__status {
+    font-size: 13px;
+    color: #8696a0;
+    text-decoration: none;
+    margin-top: 2px;
+    transition: color 0.15s ease;
+}
+
+.contact-chat-header__status:hover {
+    color: #cdf2ca;
+    text-decoration: underline;
+}
+
+.contact-chat-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-chat-header__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #a4a5a5;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.contact-chat-header__icon:hover {
+    color: #e9edef;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.contact-chat-header__icon svg {
+    width: 22px;
+    height: 22px;
+}
