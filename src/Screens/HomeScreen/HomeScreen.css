@@ -175,7 +175,7 @@
     color: #8696a0;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .home-main__buttons {
         flex-direction: column;
         align-items: center;
@@ -199,4 +199,4 @@
         width: 200px;
         height: 170px;
     }
-}
+} */

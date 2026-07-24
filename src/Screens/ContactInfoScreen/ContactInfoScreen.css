@@ -1,0 +1,61 @@
+.contact-info-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.contact-info-container .contact-chat-screen {
+    flex: 1;
+    width: auto !important;
+}
+
+.contact-info-panel {
+    width: 400px;
+    min-width: 360px;
+    max-width: 450px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c1317;
+    border-left: 1px solid #2d2e2e;
+    z-index: 20;
+    animation: slideIn 0.25s ease-out;
+}
+
+.contact-info-scrollable {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-info-scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+.contact-info-scrollable::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.contact-info-scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 3px;
+}
+
+.contact-info-scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
