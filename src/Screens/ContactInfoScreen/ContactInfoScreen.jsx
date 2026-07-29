@@ -6,6 +6,7 @@ import ContactInfoHeader from "../../Components/Contact/ContactInfo/ContactInfoH
 import ContactInfoMain from "../../Components/Contact/ContactInfo/ContactInfoMain/ContactInfoMain"
 import ContactInfoFooter from "../../Components/Contact/ContactInfo/ContactInfoFooter/ContactInfoFooter"
 import "./ContactInfoScreen.css"
+import "./ContactInfoScreen-Responsive.css"
 
 function ContactInfoScreen() {
     const { id } = useParams();

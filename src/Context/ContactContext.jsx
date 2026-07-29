@@ -5,7 +5,6 @@ import Vir from "../Assets/Images/ProfilePics/Vir.webp";
 import Nico from "../Assets/Images/ProfilePics/Nico.webp";
 import Isa from "../Assets/Images/ProfilePics/Isa.webp";
 
-//Por ahora, para que se renderize, lo dejamos así. Cambiar el return y poner outlet.
 
 const ContactContext = createContext()
 const server_contacts = [
@@ -13,49 +12,52 @@ const server_contacts = [
         id: 1,
         name: "Anita 🌻",
         profilePicture: Ani,
-        lastMessage: "Of course", sendByMe: false,
+        lastMessage: "Of course",
         messages: [
             { id: 1, sendByMe: false, content: "Hola!" },
             { id: 2, sendByMe: true, content: "Cómo estás?" },
             { id: 3, sendByMe: false, content: "Bien. Wbu?" },
             { id: 4, sendByMe: true, content: "Todo bien. U ready for Spiderman?" },
-            { id: 5, sendByMe: false, content: "Of course"}
+            { id: 5, sendByMe: false, content: "Of course" }
         ]
     },
     {
         id: 2,
         name: "María Gómez 🦁",
         profilePicture: Vir,
-        lastMessage: "Sisis. Te manda saludos Cruella", sendByMe: false,
+        lastMessage: "Obvio. Te manda saludos Cruella",
         messages: [
             { id: 1, sendByMe: true, content: "Eu, cómo andás?" },
             { id: 2, sendByMe: false, content: "Todo piola compañere" },
             { id: 3, sendByMe: false, content: "Vos?" },
-            { id: 4, sendByMe: true, content: "Bien. Te puedo molestar con 1 millón 700 mil pesos?? " }
+            { id: 4, sendByMe: true, content: "Bien. Te puedo molestar con 1 millón 700 mil pesos?? " },
+            { id: 5, sendByMe: false, content: "Obvio. Te manda saludos Cruella" }
         ]
     },
     {
         id: 3,
         name: "Niko",
         profilePicture: Nico,
-        lastMessage: "Dale, nos vemos hoy a la noche", sendByMe: true,
+        lastMessage: "Dale, nos vemos hoy a la noche",
         messages: [
             { id: 1, sendByMe: false, content: "Te pinta que nos veamos a la noche y comamos algo tranqui?" },
             { id: 2, sendByMe: true, content: "Dale, bldo" },
             { id: 3, sendByMe: false, content: "Te paso a buscar tipo 8:30 / 9" },
-            { id: 4, sendByMe: true, content: "Te espero." }
+            { id: 4, sendByMe: true, content: "Te espero." },
+            { id: 5, sendByMe: false, content: "Dale, nos vemos hoy a la noche." }
         ]
     },
     {
         id: 4,
         name: "Isa ⚡",
         profilePicture: Isa,
-        lastMessage: "Sisis", sendByMe: false,
+        lastMessage: "Sisis",
         messages: [
             { id: 1, sendByMe: true, content: "Eu blda, te gustó lo de Billie de la otra vuelta?" },
             { id: 2, sendByMe: true, content: "Couldn't stop crying tbh..." },
             { id: 3, sendByMe: false, content: "Tuvo muy bueno. Alto plan" },
-            { id: 4, sendByMe: true, content: "Te pinta que la prox vayamos a escuchar AM de los Artic??" }
+            { id: 4, sendByMe: true, content: "Te pinta que la prox vayamos a escuchar AM de los Artic??" },
+            { id: 5, sendByMe: false, content: "Sisis" }
         ]
     },
 ]

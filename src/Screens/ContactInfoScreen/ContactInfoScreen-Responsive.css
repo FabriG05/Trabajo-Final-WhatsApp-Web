@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .contact-info-container .contact-chat-screen {
+        display: none;
+    }
+
+    .contact-info-container .contact-info-panel {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        border-left: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .contact-info-container .contact-chat-screen .chat-area {
+        display: none;
+    }
+
+    .contact-info-container .contact-chat-screen {
+        flex: 0 0 380px;
+    }
+
+    .contact-info-container .contact-info-panel {
+        flex: 1;
+        max-width: none;
+        min-width: 360px;
+    }
+}

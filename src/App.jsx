@@ -8,17 +8,15 @@ import ContactInfoScreen from './Screens/ContactInfoScreen/ContactInfoScreen'
 
 function App() {
   return (
-    <ThemeContextProvider>
-      <ContactContextProvider>
-        <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/home" element={<HomeScreen />} />
-          <Route path="/contact/:id" element={<ContactChatScreen />} />
-          <Route path="/contact/:id/info" element={<ContactInfoScreen />} />
-          <Route path="*" element={<h2>404 - Not Found</h2>} />
-        </Routes>
-      </ContactContextProvider>
-    </ThemeContextProvider>
+    <ContactContextProvider>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/home" element={<HomeScreen />} />
+        <Route path="/contact/:id" element={<ContactChatScreen />} />
+        <Route path="/contact/:id/info" element={<ContactInfoScreen />} />
+        <Route path="*" element={<h2>404 - Not Found</h2>} />
+      </Routes>
+    </ContactContextProvider>
   )
 }
 

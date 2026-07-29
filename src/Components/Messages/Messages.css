@@ -180,6 +180,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    min-width: 0;
 }
 
 .chat-input-bar__textarea {
@@ -196,6 +197,7 @@
     line-height: 20px;
     font-family: inherit;
     box-sizing: border-box;
+    min-width: 0;
 }
 
 .chat-input-bar__textarea::placeholder {

@@ -5,6 +5,7 @@ import { useParams, Link } from "react-router"
 import Messages from "../../Components/Messages/Messages"
 import ContactChatHeader from "../../Components/Contact/ContactChat/ContactChatHeader/ContactChatHeader"
 import "./ContactChatScreen.css"
+import "./ContactChatScreen-Responsive.css"
 
 const ContactChatScreen = () => {
     const { id } = useParams()

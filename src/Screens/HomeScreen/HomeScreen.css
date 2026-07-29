@@ -174,29 +174,3 @@
 .home-main__footer span {
     color: #8696a0;
 }
-
-/* @media (max-width: 900px) {
-    .home-main__buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .home-main__button-card {
-        width: 100%;
-        max-width: 320px;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 12px 20px;
-        gap: 16px;
-    }
-
-    .home-main__button-card:hover {
-        transform: translateY(-2px);
-    }
-
-    .home-main__logo-image {
-        width: 200px;
-        height: 170px;
-    }
-} */

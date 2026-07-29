@@ -14,4 +14,5 @@
     background-color: var(--chat-background-color);
     position: relative;
     overflow: hidden;
+    min-width: 0;
 }
