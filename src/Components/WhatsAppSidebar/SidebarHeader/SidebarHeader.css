@@ -23,7 +23,23 @@
 
 .sidebar-header__top-icons {
     display: flex;
-    gap: 8px
+    gap: 8px;
+}
+
+.sidebar-header__top-icons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #aebac1;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-header__top-icons span:hover {
+    color: #e9edef;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .sidebar-header__search-bar {
@@ -59,4 +75,10 @@
     color: #fff;
     cursor: pointer;
     font-size: 14px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-header__buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #e9edef;
 }

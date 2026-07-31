@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { Outlet, useParams } from "react-router";
+import { useParams } from "react-router";
 import Ani from "../Assets/Images/ProfilePics/Ani.webp";
 import Vir from "../Assets/Images/ProfilePics/Vir.webp";
 import Nico from "../Assets/Images/ProfilePics/Nico.webp";
@@ -14,7 +14,7 @@ const server_contacts = [
         profilePicture: Ani,
         lastMessage: "Of course",
         messages: [
-            { id: 1, sendByMe: false, content: "Hola!" },
+            { id: 1, sendByMe: false, content: "Hi!" },
             { id: 2, sendByMe: true, content: "Cómo estás?" },
             { id: 3, sendByMe: false, content: "Bien. Wbu?" },
             { id: 4, sendByMe: true, content: "Todo bien. U ready for Spiderman?" },
@@ -43,8 +43,8 @@ const server_contacts = [
             { id: 1, sendByMe: false, content: "Te pinta que nos veamos a la noche y comamos algo tranqui?" },
             { id: 2, sendByMe: true, content: "Dale, bldo" },
             { id: 3, sendByMe: false, content: "Te paso a buscar tipo 8:30 / 9" },
-            { id: 4, sendByMe: true, content: "Te espero." },
-            { id: 5, sendByMe: false, content: "Dale, nos vemos hoy a la noche." }
+            { id: 4, sendByMe: true, content: "Te espero :)" },
+            { id: 5, sendByMe: false, content: "Dale, nos vemos hoy a la noche" }
         ]
     },
     {
@@ -72,16 +72,25 @@ function ContactContextProvider({ children }) {
     }
 
     function deleteMessageById(contactId, messageId) {
-        const contacts_modified = contacts.map((contact) => {
+        const contacts_modified = contacts.map(contact => {
             if (contact.id === Number(contactId)) {
+                const updatedMessages = contact.messages.filter(
+                    msg => msg.id !== Number(messageId)
+                );
+
                 return {
                     ...contact,
-                    messages: contact.messages.filter(msg => msg.id !== Number(messageId))
-                }
+                    messages: updatedMessages,
+                    lastMessage:
+                        updatedMessages.length > 0
+                            ? updatedMessages[updatedMessages.length - 1].content
+                            : ""
+                };
             }
-            return contact
-        })
-        setContacts(contacts_modified)
+            return contact;
+        });
+
+        setContacts(contacts_modified);
     }
 
     function createMessage(contactId, value, sendByMe) {

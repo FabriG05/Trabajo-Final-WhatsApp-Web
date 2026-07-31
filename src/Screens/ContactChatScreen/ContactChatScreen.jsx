@@ -17,7 +17,7 @@ const ContactChatScreen = () => {
                 <WhatsappSidebar />
                 <div className="chat-area" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '16px' }}>
                     <h2>Contact not found.</h2>
-                    <Link to="/" style={{ color: '#00a884', textDecoration: 'none', fontWeight: '500' }}>Volver al Inicio</Link>
+                    <Link to="/" style={{ color: '#00a884', textDecoration: 'none', fontWeight: '500' }}>Back to homepage</Link>
                 </div>
             </div>
         )

@@ -5,7 +5,7 @@ import "./ContactSidebar.css"
 
 const SidebarContacts = () => {
     const { contacts } = useContext(ContactContext)
-    
+
     return (
         <aside className="whatsapp-sidebar">
             <div className="chats-container">
@@ -17,7 +17,6 @@ const SidebarContacts = () => {
                         <div className="side-bar__contact-info">
                             <div className="side-bar__contact-header">
                                 <h3>{contact.name}</h3>
-                                {/* <span className="side-bar__contact-time">10:42</span> */}
                             </div>
                             <p>{contact.lastMessage}</p>
                         </div>

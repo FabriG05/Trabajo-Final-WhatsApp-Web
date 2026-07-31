@@ -5,8 +5,8 @@ function ContactInfoHeader({ currentContact }) {
     return (
         <div className="contact-info-header-container">
             <header className="contact-info-header">
-                <Link 
-                    className="contact-info-header__icon" 
+                <Link
+                    className="contact-info-header__icon"
                     to={`/contact/${currentContact.id}`}
                     title="Close"
                 >

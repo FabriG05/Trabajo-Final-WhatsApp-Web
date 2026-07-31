@@ -33,7 +33,7 @@ function Messages() {
                     </span>
                 </div>
 
-                <form className="chat-input-bar__form" onSubmit={handleCreateMessage}>
+                <form className="chat-input-bar__form" name="create-message-form" onSubmit={handleCreateMessage}>
                     <textarea
                         id="message"
                         name="message"

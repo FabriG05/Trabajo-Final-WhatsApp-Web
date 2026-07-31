@@ -1,4 +1,3 @@
-import { ThemeContextProvider } from './Context/Themecontext'
 import { Route, Routes } from 'react-router'
 import { ContactContextProvider } from './Context/ContactContext'
 import HomeScreen from './Screens/HomeScreen/HomeScreen'
