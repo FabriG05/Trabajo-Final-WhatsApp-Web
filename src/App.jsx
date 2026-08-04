@@ -13,7 +13,7 @@ function App() {
         <Route path="/home" element={<HomeScreen />} />
         <Route path="/contact/:id" element={<ContactChatScreen />} />
         <Route path="/contact/:id/info" element={<ContactInfoScreen />} />
-        <Route path="*" element={<h2>404 - Not Found</h2>} />
+        {/* <Route path="*" element={<h2>404 - Not Found</h2>} /> */}
       </Routes>
     </ContactContextProvider>
   )
